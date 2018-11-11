@@ -1,3 +1,5 @@
+A simple cart page app.
+
 ## Tech Stack
 * Create React App
 * React 16 Context API
