@@ -14,7 +14,7 @@ export default class Provider extends Component {
     }
 
     componentWillMount() {
-        fetch('https://cartservice-40668.firebaseapp.com/cart')
+        fetch('https://cartservice-40668.firebaseapp.com/cart-cached')
             .then(response => response.json())
             .then(data => this.setState({
                 items: data.products.map(item => ({ ...item, ...{ qtyInCart: 0 } }))
