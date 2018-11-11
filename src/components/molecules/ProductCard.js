@@ -33,7 +33,7 @@ class ProductCard extends PureComponent {
                     <CardTitle className="small">{item.productName}</CardTitle>
                     <CardSubtitle>{item.brandName}</CardSubtitle>
                     <CardText className="small">{item.packaging}</CardText>
-                    <CardText className="font-weight-bold">{item.price}</CardText>
+                    <CardText className="font-weight-bold">Rs {item.price}</CardText>
                     <Atc 
                         count={item.qtyInCart}
                         onClickAddHandler={this.addOneItemToCart}
